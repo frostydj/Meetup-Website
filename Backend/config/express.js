@@ -1,4 +1,4 @@
-const express = require('express');
+const express = require('Backend/config/express');
 const bodyParser = require('body-parser');
 const { allowCrossOriginRequestsMiddleware } = require('../app/middleware/cors.middleware');
 

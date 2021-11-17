@@ -41,7 +41,7 @@ exports.loadData = async function () {
  */
 async function populateDefaultUsers() {
     const createSQL = 'INSERT INTO `user` (`email`, `first_name`, `last_name`, `image_filename`, `password`) VALUES ?';
-    let {properties, usersData} = require('../resources/default_users');
+    let {properties, usersData} = require('../resources/default_users.json');
 
     // Shallow copy all the user arrays within the main data array
     // Ensures that the user arrays with hashed passwords won't persist across multiple calls to this function
